@@ -37,7 +37,7 @@ export function Navbar() {
                 </div>
 
                 {/* Mobile Menu Toggle */}
-                <button className="md:hidden p-2">
+                <button className="md:hidden p-2" aria-label="Toggle menu">
                     <Menu className="h-6 w-6 text-gray-600" />
                 </button>
             </div>

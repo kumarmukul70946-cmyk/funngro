@@ -45,10 +45,10 @@ export default function SignupPage() {
 
                     <div className="grid grid-cols-2 gap-4 mb-6">
                         <Button variant="outline" className="border-orange-200 bg-orange-50 text-orange-700 hover:bg-orange-100">
-                            I'm a Student
+                            I&apos;m a Student
                         </Button>
                         <Button variant="outline">
-                            I'm a Company
+                            I&apos;m a Company
                         </Button>
                     </div>
 

@@ -2,13 +2,7 @@
 
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { cn } from '@/lib/utils'; // Assuming you have utils, we need to make sure we do or define cn here.
-import { clsx, type ClassValue } from "clsx";
-import { twMerge } from "tailwind-merge";
-
-function cn(...inputs: ClassValue[]) {
-    return twMerge(clsx(inputs));
-}
+import { cn } from '@/lib/utils';
 
 type FadeInProps = {
     children: React.ReactNode;
@@ -41,7 +35,7 @@ export function FadeIn({
             transition: {
                 duration: duration,
                 delay: delay,
-                ease: [0.21, 0.47, 0.32, 0.98] // Smooth ease out
+                ease: [0.21, 0.47, 0.32, 0.98] as [number, number, number, number]
             }
         }
     };
